@@ -1,0 +1,26 @@
+/vendor/
+/node_modules/
+/.env
+/.env.*
+!/.env.example
+/bootstrap/cache/*.php
+/database/*.sqlite
+/database/*.sqlite-*
+/storage/*.key
+/storage/app/private/*
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/.phpunit.cache/
+/.phpunit.result.cache
+/.idea/
+/.fleet/
+/.vscode/.ropeproject/
+/public/hot
+/public/build/
+/coverage/
+
+# Classroom PDO database (not part of source repository)
+/database/classroom_pdo.sqlite
+/database/classroom_pdo.sqlite-*

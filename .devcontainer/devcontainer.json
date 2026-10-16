@@ -1,0 +1,44 @@
+{
+  "name": "PHP OOP Semester Labs \u2014 Laravel 13 / PHP 8.4",
+  "hostRequirements": {
+    "cpus": 2
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [
+    8000
+  ],
+  "portsAttributes": {
+    "8000": {
+      "label": "Laravel Semester Labs",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "README.md",
+        "SYLLABUS_ALIGNMENT.md",
+        "docs/WEEK_11.md",
+        "routes/web.php"
+      ]
+    },
+    "vscode": {
+      "extensions": [
+        "bmewburn.vscode-intelephense-client",
+        "xdebug.php-debug",
+        "ikappas.composer"
+      ],
+      "settings": {
+        "editor.fontSize": 14,
+        "editor.wordWrap": "on",
+        "editor.minimap.enabled": false,
+        "files.autoSave": "afterDelay",
+        "php.validate.executablePath": "/usr/local/bin/php",
+        "files.exclude": {
+          "**/vendor": true
+        }
+      }
+    }
+  },
+  "image": "mcr.microsoft.com/devcontainers/php:8.4-bookworm"
+}

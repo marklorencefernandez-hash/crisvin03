@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": false,
+  "files.autoSave": "afterDelay",
+  "php.validate.executablePath": "/usr/local/bin/php"
+}
